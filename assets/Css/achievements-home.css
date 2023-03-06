@@ -1,0 +1,19 @@
+.achievements{
+    background-color: aqua;
+}
+
+.achieve-1{
+    display: block;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.achieve-1 h2{
+    font-size: 50px;
+}
+
+.achieve-1 p{
+    font-size: 20px;
+    max-width: 40%;
+    margin-left: 30%;
+}

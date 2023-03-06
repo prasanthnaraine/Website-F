@@ -1,0 +1,278 @@
+nav{
+  background: #2d1753;
+  }
+  nav:after{
+    content: '';
+    clear: both;
+    display: table;
+  }
+  nav .logo{
+    float: left;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+  }
+
+  .logo img{
+    max-height: 4rem;
+    /* background-color: #FCC000; */
+
+  }
+  nav ul{
+    float: right;
+    margin-right: 4.5%;
+    list-style: none;
+    position: relative;
+  }
+  nav ul li{
+    float: left;
+    display: inline-block;
+    background: #2d1753;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: white;
+    line-height: 70px;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 10px 25px;
+  
+  }
+  nav ul li a:hover{
+    color: gold;
+    border-radius: 5px;
+    box-shadow:  0 0 5px gold,
+                 0 0 10px gold;
+
+  }
+
+  
+  nav ul li:nth-child(6) a{
+    border-right: 1px solid white ;
+  }
+
+  nav ul li:nth-child(6) a:hover , nav ul li:nth-child(7) a:hover{
+/* background-color: aqua; */
+box-shadow: none;
+border-radius: 0px;
+color: white;
+  }
+  nav ul ul li a:hover{
+    box-shadow: none;
+
+  }
+  nav ul ul{
+    position: absolute;
+    top: 90px;
+    /* border-top: 3px solid cyan; */
+    opacity: 0;
+    visibility: hidden;
+    transition: top .3s;
+    z-index: 10000;
+  }
+  nav ul ul ul{
+    border-top: none;
+  }
+  nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+  }
+  nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 200px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+  }
+  nav ul ul li a{
+    line-height: 50px;
+  }
+  nav ul ul ul li{
+    position: relative;
+    top: -70px;
+    left: 120px;
+  }
+  .show,.icon,input{
+    display: none;
+  }
+  .fa-plus{
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+nav ul img{
+  margin-left: .5rem;
+}
+
+
+    
+.whatsapp{
+  position: fixed !important;
+  top: 90vh;
+  z-index: 5000;
+  left: 2%;
+  /* animation: too 2s linear infinite; ; */
+
+}
+
+.calling{
+  position: fixed !important;
+  top: 82vh;
+  z-index: 5000;
+  left: 2%;
+  /* animation: too 2s linear infinite; ; */
+
+}
+
+
+@keyframes too {
+  0%{
+  transform: translateY(-30px);
+  }
+  25%{
+    transform: translateY(0px);
+  }
+
+  50%{
+    transform: translateY(-10px);
+  }
+
+  75%{
+    transform: translateY(-20px);
+  }
+
+  100%{
+    transform: translateY(-30px);
+  }
+}
+
+}
+
+@media screen and (max-width: 1650px){
+    nav ul {
+        margin-right: 1% !important;
+        /* background-color: #FCC000; */
+
+    }
+
+   
+}
+
+
+
+@media screen and (max-width:1200px) {
+  .logo img{
+    max-height: 2rem;
+        }
+}
+
+/* Mobile responsive */
+
+  @media all and (max-width: 968px) {
+    nav ul{
+      margin-right: 0px;
+      float: left;
+    }
+    nav .logo{
+      padding-left: 30px;
+      width: 100%;
+    }
+
+  
+    .show + a, ul{
+      display: none;
+    }
+    nav ul li{
+        display: block;
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding-right: 5%;
+        /* background-color: orange; */
+    
+    }
+
+    nav ul li:nth-child(6) a{
+        border-right: none ;
+      }
+    
+    
+    nav ul ul li{
+      display: block;
+      max-width: 100%;
+      min-width: 100%;
+      text-align: center;
+      /* background-color: aquamarine; */
+  
+    }
+    nav ul li a:hover{
+      box-shadow: none;
+    }
+    .show{
+      display: block;
+      color: white;
+      font-size: 18px;
+      padding: 0 20px;
+      line-height: 70px;
+      cursor: pointer;
+    }
+    .show:hover{
+      color: #FCC000;
+    }
+    .icon{
+      display: block;
+      color: white;
+      position: absolute;
+      top: 0;
+      right: 40px;
+      line-height: 70px;
+      cursor: pointer;
+      font-size: 25px;
+    }
+    nav ul ul{
+      top: 70px;
+      border-top: 0px;
+      float: none;
+      position: static;
+      display: none;
+      opacity: 1;
+      visibility: visible;
+    }
+    nav ul ul a{
+      /* padding-left: 40px; */
+    }
+    nav ul ul ul a{
+      padding-left: 80px;
+    }
+    nav ul ul ul li{
+      position: static;
+    }
+    [id^=btn]:checked + ul{
+      display: block;
+    }
+    nav ul ul li{
+      border-bottom: 0px;
+    }
+    span.cancel:before{
+      content: '\f00d';
+    }
+
+.whatsapp{
+  left: 5%;
+
+}
+
+.calling{
+  left: 5%;
+  top: 80vh;
+}
+
+  }
+
+  
+  /* ------------------ */
+
