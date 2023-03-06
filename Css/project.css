@@ -1,0 +1,317 @@
+
+ .containers {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    min-width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 3rem 3rem 5rem 0;
+}
+.thumbnails {
+    display: block;
+    flex-direction: row;
+    line-height: 0;
+  overflow: hidden; 
+  justify-content: space-between;
+  /* background-color: #FFC000; */
+  max-width: 25%;
+}
+.thumbnails li {
+    flex: auto;
+    margin: 1rem;
+    list-style: none;
+}
+.thumbnails a {
+    display: block;
+}
+.thumbnails img {
+    width: 30vmin;
+    border-radius: .2rem;
+    height: 15vmin;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid white;
+
+}
+
+
+
+
+/* --------------- */
+.slides {
+    width: 55vmin;
+    min-height: 65vmin;
+    max-width: 40%;
+    display: block;
+    /* background-color: black; */
+    overflow: hidden !important;
+
+}
+.slides li {
+    max-width: 55vmin !important;
+    border: 5px solid white;
+    max-height: 65vmin;
+    min-height: 65vmin;
+    position: absolute;
+    z-index: 1;
+    margin-top: 1rem;
+    list-style: none;
+    overflow: hidden !important;
+}
+.slides img {
+    max-height: 65vmin;
+    min-width: 75vmin !important;
+    object-fit: cover;
+    
+    overflow: hidden;
+    object-position: top;
+}
+.slides li:target {
+    z-index: 3;
+    animation: slide 1s 1;
+}
+.slides li:not(:target) {
+    animation: hidden 1s 1;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(-100%);
+   }
+    100% {
+        transform: translateX(0%);
+   }
+}
+@keyframes hidden {
+    0% {
+        z-index: 2;
+   }
+    100% {
+        z-index: 2;
+   }
+}
+
+
+@media screen and (max-width:500px) {
+    .containers{
+        display: block;
+        background-color: aqua;
+        max-width: 100% !important;
+        display: none;
+    }
+
+    
+}
+
+
+
+/* ------------------------------------- */
+
+/* Parallex effect */
+
+
+.parallax {
+    /* The image used */
+    background-image: url("../../assets/img/pexels-ir-solyanaya-634524.jpg") ;
+    /* background-color: rgba(0 , 0, 0, .5); */
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .parallax {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .parallax .Para-1{
+    font-size: 50px;
+    padding: 5% 5% 10% 10%;
+    text-align: right;
+  }
+
+
+  .parallax .Para-2{
+    display: block;
+    padding: 10% 10% 10% 5%;
+  }
+
+  .Para-2 .para2-1{
+    font-size: 40px;
+  }
+
+  .Para-2 .para2-2{
+    font-size: 25px;
+  }
+
+  .Para-2 button{
+    padding: 1rem;
+    background-color: gold;
+    border: none;
+  }
+
+
+  /* --------------------------------- */
+  /* Card 1st row in project page */
+
+.cardss{
+  display: flex;
+  max-width: 100%;
+  padding: 5% 10%;
+  background-color: white;
+}
+
+
+.cardss .card-body{
+  background-color:white;
+  border: 1px solid gold;
+  margin: 0 .1%;
+  padding: 3%;
+  text-align: center;
+}
+
+.cardss .card-body:hover {
+  background-color: gold !important;
+}
+
+
+
+.cardss .card-body img {
+  max-height: 6rem;
+  background-color: white;
+  padding: 1.2rem;
+border-radius: 1rem;
+  margin-bottom: 2rem;
+
+}
+
+.cardss .card-body-align-left{
+  /* background-color: bisque; */
+  text-align: left;
+}
+.cardss .card-body h5{
+  font-size: 23px;
+  margin-bottom: 2rem;
+  text-align: center;
+  /* background-color: aqua; */
+  min-height: 4rem;
+}
+
+.cardss .card-body p{
+  font-size: 18px;
+  text-align: justify;
+  /* background-color: aquamarine; */
+  min-height: 7rem;
+  max-height: 7rem;
+  overflow: hidden;
+}
+
+.number-absolute{
+  background-color: gold;
+  border: 1px solid darkorange;
+  border-radius: 50%;
+  padding: 1.5%;
+  
+}
+
+.cardss .card-body:hover::after > .number-absolute{
+  background-color: yellowgreen;
+}
+
+.cards-numbers{
+  display: flex;
+  max-width: 100%;
+  min-width: 100%;
+  justify-content: space-around;
+  padding: 3% 10%;
+  /* background-color: yellow; */
+  position: absolute;
+
+  
+}
+
+
+
+@media screen and (max-width:1300px) {
+  .cards-numbers{
+    display: none;
+  }
+
+  .cardss{
+    display: block;
+  }
+}
+
+
+
+
+
+/* ------------------------------------- */
+/* Project new page */
+
+.service-group{
+  padding: 5% 15%;
+}
+
+.service-group .card-heading{
+  /* background-color: aquamarine; */
+  max-width: 46%;
+  min-width: 46%;
+  margin: 2%;
+  /* border-radius: 3rem; */
+  overflow: hidden !important;
+}
+
+.service-group .card{
+min-width: 100%;
+max-width: 100%;
+  padding: 0;
+  /* border: 1px solid yellow !important; */
+margin: 0 ;
+overflow: hidden !important;
+border: 1px solid aliceblue;
+border-radius: 2rem;
+
+
+}
+
+.service-group .card img:hover{
+transform: scale(1.1);
+transition-duration: 3s;
+}
+
+.service-group .card img{
+  max-height: 20rem;
+  min-height: 20rem;
+  border-radius: 2rem;
+  overflow: hidden;
+  /* border: 3rem;   */
+}
+
+.service-group .card-body{
+  /* background-color: aqua; */
+  padding-top: 5%;
+}
+
+
+@media screen and (max-width:768px) {
+  .service-group .card-heading{
+    /* background-color: aquamarine; */
+    max-width: 96%;
+    min-width: 96%;
+    /* border-radius: 3rem; */
+    overflow: hidden !important;
+  }
+
+  .service-group{
+    padding: 5% 2%;
+  }
+}

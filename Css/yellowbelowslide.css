@@ -1,0 +1,38 @@
+.yellow-below-slide{
+    max-width: 80%;
+    background-color: yellow;
+    min-height: 50rem;
+    position: relative;
+margin-left: 10%;
+display: flex;
+padding: 10rem;
+
+}
+
+.yellow-below-slide .ybs-1{
+    background-color: orange;
+    display: block;
+}
+
+.ybs-1 img{
+    max-height: 50rem;
+    padding: 0 5rem;
+}
+
+.yellow-below-slide .ybs-2{
+    background-color: cadetblue;
+    display: block;
+}
+
+.pro-bar{
+    padding: 1rem 0.5rem;
+}
+
+
+
+
+.ybs-2 button{
+    background-color: #FCC000;
+    padding: 1rem;
+    border-radius: .5rem;
+}

@@ -1,0 +1,686 @@
+#carouselExampleControls {
+    max-height: 90vh;
+
+    overflow: hidden;
+    /* background: blur; */
+}
+
+
+
+.carousel-control-next-icon {
+    /* background-color: black; */
+    top: 50%;
+    position: absolute;
+    animation: mover 2s infinite alternate;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(2rem);
+    }
+
+    100% {
+        transform: translateX(-2rem);
+    }
+}
+
+
+.carousel-control-prev-icon{
+    top: 50%;
+    position: absolute;
+    animation: movers 2s infinite alternate;
+}
+
+@keyframes movers {
+    0% {
+        transform: translateX(-2rem);
+    }
+
+    100% {
+        transform: translateX(2rem);
+    }
+}
+
+
+
+/* .carousel-control-prev-icon:hover , .carousel-control-next-icon:hover{
+background-color: black;
+padding: 1rem 1.5rem!important;
+border: 1px solid #FFC000;
+border-radius: 50%;
+min-height: 3rem;
+} */
+
+
+
+/* ------------------------------------------------------- */
+/* Slider 1 */
+
+.textonslide {
+    /* background-color: orange; */
+    position: absolute;
+    top: 18%;
+    right: 30%;
+    left: 30%;
+    min-width: 40% !important;
+    max-width: 40%;
+    /* border: 1px solid palegreen; */
+}
+
+.slide1-row1 {
+    display: flex;
+    max-height: 7rem;
+    /* background-color: aqua; */
+    justify-content: end;
+}
+
+.slide1-row1>p {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    transform: rotate(180deg);
+    font-size: 16px;
+    min-height: 7rem;
+    color: white;
+    padding: .4rem 1rem;
+
+    font-weight: 600;
+    /* margin-top: 1rem; */
+/* background-color: aqua; */
+
+}
+
+.slide1-row1 h2,
+.slide1-row2 h2 {
+    font-size: 130px;
+    font-weight: 800;
+}
+
+
+.slide1-row2 {
+    display: flex;
+    max-height: 7rem;
+    text-align: end;
+    margin-top: 1.5rem;
+    /* background-color: blue; */
+}
+
+.slide1-row2 p {
+    font-size: 16px;
+    padding: 2rem 0 1rem 2rem;
+    color: white;
+    font-weight: 600;
+    text-align: left;
+}
+
+.textonslide button {
+    background-color: #FFC000;
+    padding: .7rem 2rem;
+    /* border-radius: .5rem; */
+    margin-top: 3rem;
+    border: 2px solid #FFC000;
+    border-radius: .1rem;
+
+}
+
+.textonslide button:hover {
+    /* background-color: red; */
+    /* transform: translate(20px ,10px); */
+    /* transition-duration: 1s; */
+    /* font-weight: 800; */
+}
+
+
+
+/* ------------------------------------------------------- */
+/* slide 2 */
+
+
+
+.textonslide-2 {
+    /* background-color: orange; */
+    position: absolute;
+    top:10%;
+    right: 48%;
+    left: 15%;
+    max-width: 50% !important;
+    /* border: 1px solid palegreen; */
+}
+
+.textonslide-2 button{
+    background-color: #FFC000;
+    padding:1rem;
+    /* border-radius: .5rem; */
+    margin-top: 1rem;
+    padding: 1px solid #FFC000;
+    border-radius: .1rem;
+
+}
+
+.slide2-row1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: -3rem;
+}
+
+.slide2-row1 h2 {
+    font-size: 130px;
+    font-weight: 800;
+
+}
+
+.slide2-row2 {
+    display: flex;
+    align-items: center;
+    /* background-color: aqua; */
+    max-width: 150%;
+}
+
+.slide2-row2 h2 {
+    font-size: 130px;
+    font-weight: 800;
+
+}
+
+.slide2-row2 p {
+    max-width: 25%;
+    text-align: end;
+    padding-right: 1rem;
+    color: white;
+    margin-top: -1rem;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.slide2-bottom {
+    /* background-color: aqua; */
+    max-width: 95%;
+    right: 5%;
+    bottom: 35%;
+    position: absolute;
+    display: flex;
+    padding: 5rem;
+}
+
+.slide2-bottom #text {
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    max-width: 75%;
+    padding: .5rem 2rem;
+    background-color: transparent;
+    border: .1rem solid #FFC000;
+    border-right: none;
+}
+
+.slide2-bottom #img {
+    padding: 1rem;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    /* border: .1px solid white; */
+
+}
+
+.Slide2-button{
+    /* background-color: lightcoral; */
+    text-align: left;
+}
+
+
+.Slide2-button button:first-child{
+    /* background-color: aqua !important; */
+    padding: .5rem  2rem;
+    margin-right: 2rem;
+    border: 2px solid #FFC000;
+}
+
+
+.button-empty {
+    background-color: transparent !important;
+    color: white;
+    padding: .6rem 3rem !important;
+    border: 1px solid white;
+}
+
+.button-empty:hover {
+    background-color: #FFC000 !important;
+    color: black;
+    /* transform: translate(20px ,10px); */
+    transition-delay: .2s;
+    transition-duration: 1s;
+    border: 1px solid black;
+
+}
+
+/* --------------------------------------------- */
+/* Slider 3 */
+
+.textonslide-3 {
+    /* background-color: orange; */
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    max-width: 60% !important;
+    /* border: 1px solid palegreen; */
+}
+
+.slide3-row1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: -3rem;
+}
+
+.slide3-row1 h2,
+.slide3-row2 h2 {
+    font-size: 130px;
+    font-weight: 800;
+
+}
+
+.slide3-row1 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.slide3-row1 p {
+    max-width: 15%;
+    padding: 4% 0 2% 2%;
+    color: white;
+    text-align: start;
+    font-weight: 600;
+
+}
+
+
+.slide3-row2 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.slide3-row2 p {
+    max-width: 25%;
+    padding: 1rem 2rem 2rem 0;
+    text-align: end;
+    color: white;
+    font-weight: 600;
+}
+
+.slide3-bottom {
+    /* background-color: aqua; */
+    min-width: 100%;
+    left: 10%;
+    top: 40%;
+    position: absolute;
+    display: flex;
+    padding: .5rem;
+    /* background-color: aquamarine; */
+}
+
+.slide3-bottom #text {
+    text-align: end;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    max-width: 55%;
+    padding: .5rem 2rem;
+    background-color: darkcyan;
+
+}
+
+#slide3-button{
+    text-align: end;
+    /* background-color: aqua; */
+    max-width: 100%;
+}
+
+.slide3-bottom #img {
+    padding: 1rem;
+    max-width: 20%;
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+.textonslide-3 button {
+    background-color: #FFC000;
+    padding: .7rem 2rem;
+    /* border-radius: .5rem; */
+    margin-top: 1rem;
+    /* padding: 2px solid #FFC000 !important; */
+    border-radius: .2rem;
+
+}
+
+
+/* Responsiveness laptop */
+
+@media screen and (max-width:1750px) {
+    .slide1-row2 p {
+        padding: 1rem 0 1rem 2rem;
+        color: white;
+        min-width: 60%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+}
+
+
+/* Responsiveness sliders */
+
+@media screen and (max-width:500px) {
+    #carouselExampleControls {
+        min-height: 60vh;
+        max-height: 60vh;
+        overflow: hidden;
+        background-color: #FFC000;
+        /* background: blur; */
+    }
+
+    .carousel-item{
+        min-height: 60vh;
+max-height: 60vh;
+        background-color: bisque;
+        background-size: cover !important;
+        /* border: 5px solid greenyellow; */
+    }
+
+    .homes-slide .carousel-item img {
+        max-height: 60vh !important;
+        min-height: 60vh !important;
+    }
+
+    .slide1-row1 h2,
+    .slide1-row2 h2,
+    .slide2-row1 h2,
+    .slide2-row2 h2,
+    .slide3-row1 h2,
+    .slide3-row2 h2 {
+        font-size: 45px;
+    }
+
+ 
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        /* background-color: black; */
+        top: 50%;
+        position: absolute;
+        animation: mover 1s infinite alternate;
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(20px);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+
+
+
+    /* Slide 1 mobile */
+    .textonslide button{
+        background-color: #FFC000;
+        color: black !important;
+        padding: .5rem 1rem;
+        border: none;
+        /* border-radius: .5rem; */
+        margin-top: 5rem;
+
+    }
+
+    .textonslide button a{
+        /* background-color: aqua; */
+    }
+
+    .textonslide {
+        /* background-color: bisque; */
+        /* background-color: orange; */
+        position: absolute;
+        top: 15%;
+        right: 10%;
+        left: 10%;
+        max-height: 20rem;
+        max-width: 80% !important;
+        /* border: 1px solid palegreen; */
+
+    }
+
+    .slide1-row1 {
+        display: block;
+        max-height: 7rem;
+        /* background-color: aqua; */
+        text-align: center;
+    }
+
+    .slide1-row1 h2{
+        margin-top: -3.5rem;
+    }
+
+    .slide1-row1>p {
+        writing-mode: vertical-lr;
+        text-orientation: mixed;
+        transform: rotate(270deg);
+        font-size: 15px;
+        color: white;
+        padding: 0 1rem;
+        margin-left: 42%;
+        margin-top: -1%;
+        font-weight: 600;
+        /* background-color: blueviolet; */
+
+
+    }
+
+    .slide1-row2 {
+        display: block;
+        text-align: center;
+        min-width: 70%;
+        min-height: 7rem;
+        /* border: 1px solid olive; */
+    }
+
+    .slide1-row2 p {
+        font-size: 16px;
+        padding: 1rem 1rem 1rem 1rem;
+        color: white;
+        font-weight: 400;
+        /* border: 1px solid olive; */
+        margin-top: -1rem;
+        text-align: center;
+
+    }
+
+/* Slide 2 mobile */
+.textonslide-2{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    max-width: 90% !important;
+    min-height: 20rem;
+    /* border: 1px solid palegreen; */
+}
+
+.slide2-row1{
+    display: block;
+    /* background-color: aqua; */
+    text-align: center;
+}
+
+.slide2-row2{
+    display: block;
+    margin-top: 4rem;
+    /* background-color: blue; */
+    text-align: center;
+    line-height: .1;
+}
+
+.slide2-bottom {
+    /* background-color: aqua; */
+    min-width: 80%;
+    right: 10%;
+    left: 10%;
+    bottom: 25%;
+    position: absolute;
+    display: flex;
+    padding: .5rem;
+    /* border: 2px solid #FFC000; */
+}
+
+.slide2-bottom #text {
+    text-align: center;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 80%;
+    padding: 1rem .5rem;
+    background-color: darkcyan;
+    opacity: .8;
+    font-weight: 900;
+
+}
+.slide2-bottom #img {
+    padding: 1rem;
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFC000;
+    /* color: white !important; */
+}
+
+.slide2-row2 p {
+    max-width: 90%;
+    text-align: center;
+    /* padding-right: 1rem; */
+    color: white;
+    font-weight: 600;
+    margin-left: 10%;
+
+}
+
+.Slide2-button{
+    /* background-color: lightcoral; */
+    text-align: center;
+    display: block;
+}
+
+.Slide2-button{
+    /* background-color: lightcoral; */
+    /* text-align: left; */
+}
+
+
+.Slide2-button button:first-child{
+    /* background-color: aqua !important; */
+    padding: .5rem  2rem;
+    margin-right: 0;
+    border: 2px solid #FFC000;
+}
+
+
+/* slide 3 mobile */
+.textonslide-3{
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    left: 5%;
+    max-width: 90% !important;
+    /* border: 1px solid palegreen; */
+}
+
+.slide3-row1 {
+    display: block;
+    text-align: center;
+    margin-bottom: -2rem;
+}
+.slide3-row1 p {
+    min-width: 100%;
+    padding: 1rem ;
+    /* background-color: aqua; */
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    margin-top: -1rem;
+
+}
+
+.slide3-row2{
+    display: block;
+    /* background-color: aliceblue; */
+    text-align: center;
+    line-height: 1;
+}
+.slide3-row2 p {
+    max-width: 90%;
+    margin-left: 10%;
+    margin-bottom: -2rem;
+    text-align: center;
+}
+.slide3-bottom {
+    /* background-color: aqua; */
+    max-width: 100%;
+    left: 0;
+    right: 0;
+    top: 70%;
+    position: absolute;
+    display: flex;
+    padding: .5rem;
+    /* background-color: aquamarine; */
+    text-align: center;
+    padding-left: 10%;
+
+}
+
+.slide3-bottom #text {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 75%;
+    padding:  1rem;
+    background-color: darkcyan;
+
+}
+
+
+#slide3-button{
+    text-align: center;
+    /* background-color: aqua; */
+    max-width: 100%;
+    margin-top: 2rem;
+}
+
+
+
+.slide3-bottom #img {
+    padding: 1rem;
+    min-width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border: 1px solid darkcyan;
+}
+
+
+}
+
+
+/* ----------------------------------------------- */
+
